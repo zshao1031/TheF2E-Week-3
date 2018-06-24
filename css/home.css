@@ -1,0 +1,349 @@
+.wrap{
+	width: 1024px;
+	min-height: 100vh;
+	margin: 0 auto;
+	background: #F2F2F2;
+}
+
+/***********************************/
+
+.overview h2{
+	float: left;
+	font-family: HelveticaNeue-Bold;
+	font-size: 24px;
+	color: #000000;
+	margin-top: 30px;
+	margin-left: 42px;
+	margin-bottom: 20px;
+}
+
+.overview .dateBox{
+	float: right;
+	margin-right: 42px;
+	margin-top: 39px;
+}
+
+#firstDay , #lastDay{
+	font-family: HelveticaNeue-Medium;
+	font-size: 16px;
+	color: #9B9B9B;
+	text-align: right;
+}
+
+.overview .dateBox .fa-caret-right{
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+/***********************************/
+
+.dataList{
+	padding-left: 32px;
+	padding-right: 32px;
+	text-align: center;
+}
+
+.dataList li{
+	float: left;
+	width: 300px;
+	margin-left: 10px;
+	margin-right: 10px;
+	background: #FFFFFF;
+	box-shadow: 0 0 10px 5px #EBEBEB;
+	border-radius: 3px;
+	padding-top: 26px;
+	padding-bottom: 30px;
+}
+
+.dataList i{
+	font-size: 20px;
+	margin-bottom: 14px;
+}
+
+.dataList h3{
+	display: inline;
+	font-family: HelveticaNeue-Medium;
+	font-size: 16px;
+	color: #000000;
+}
+
+.dataList .totalRevenue p{
+	font-family: HelveticaNeue-Bold;
+	font-size: 36px;
+	color: #7ED321;
+}
+
+.dataList .totalCost p{
+	font-family: HelveticaNeue-Bold;
+	font-size: 36px;
+	color: #D0021B;
+}
+
+.dataList .netIncome p{
+	font-family: HelveticaNeue-Bold;
+	font-size: 36px;
+	color: #4A90E2;
+}
+
+/***********************************/
+
+#selectTimeRange{
+	display: inline-block;
+	position: relative;
+	margin-left: 20px;
+}
+
+#selectTimeRange .currentSelect{
+	font-family: HelveticaNeue-Medium;
+	font-size: 16px;
+	color: #9B9B9B;
+	text-align: right;
+}
+
+#selectTimeRange .timeRangeList{
+	display: none;
+	position: absolute;
+  	right: 0;
+  	top: 27px;
+  	background: #FFFFFF;
+  	border-radius: 2px;
+  	box-shadow: 1px 2px 10px 0 #9B9B9B;
+}
+
+#selectTimeRange .timeRangeList li{
+	width: 125px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-family: HelveticaNeue;
+	font-size: 16px;
+	color: #000000;
+	text-align: center;
+}
+
+#selectTimeRange .timeRangeList li:hover{
+	background: #000000;
+	color: #FFFFFF;
+}
+
+
+/***********************************/
+
+.activity{
+	margin: 0 auto;
+	margin-top: 18px;
+	margin-left: 42px;
+	margin-right: 42px;
+	padding: 30px 40px 30px 40px;
+	background: #FFFFFF;
+	box-shadow: 0 0 10px 5px #EBEBEB;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+
+.activity h2{
+	font-family: HelveticaNeue-Bold;
+	font-size: 24px;
+	color: #000000;
+}
+
+#canvas{
+	margin-top: 16px;
+}
+
+/***********************************/
+
+.transactionWebsiteBox{
+	float: left;
+	width: 460px;
+	height: 456px;
+	background: #FFFFFF;
+	margin-left: 42px;
+	margin-bottom: 42px;
+	background: #FFFFFF;
+	box-shadow: 0 0 10px 5px #EBEBEB;
+	border-radius: 3px;
+	padding: 30px 40px 30px 40px;
+}
+
+.transactionWebsiteBox .drawBorderBottom td{
+	border-bottom: 1px solid #EBEBEB;
+}
+
+.transactionWebsiteBox h2{
+	font-family: HelveticaNeue-Bold;
+	font-size: 24px;
+	color: #000000;
+	margin-bottom: 7px;
+}
+
+.transactionWebsiteBox tr{
+	width: 380px;
+}
+
+.transactionWebsiteBox .websiteMarks{
+	font-size: 50px;
+	color: #000000;
+	padding-top: 23px;
+	padding-bottom: 24px;
+}
+
+.transactionWebsiteBox .websiteAddress{
+	padding-left: 20px;
+	font-family: HelveticaNeue-Medium;
+	font-size: 16px;
+	color: #9B9B9B;
+	vertical-align: middle;
+}
+
+.transactionWebsiteBox .salesVolume{
+	font-family: HelveticaNeue-Medium;
+	font-size: 20px;
+	color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	padding-left: 56px
+}
+
+.transactionWebsiteBox .performance.goUp{
+	vertical-align: middle;
+	padding-left: 20px;
+	color:  #7ED321;
+}
+
+.transactionWebsiteBox .performance.goDown{
+	vertical-align: middle;
+	padding-left: 20px;
+	color: #D0021B;
+}
+
+.transactionWebsiteBox .performanceValue.goUp{
+	font-family: HelveticaNeue-Medium;
+	font-size: 16px;
+	color: #7ED321;
+	vertical-align: middle;
+	padding-left: 8px;
+}
+
+.transactionWebsiteBox .performanceValue.goDown{
+	font-family: HelveticaNeue-Medium;
+	font-size: 16px;
+	color: #D0021B;
+	vertical-align: middle;
+	padding-left: 8px;
+}
+
+/***********************************/
+
+.latestOrdersBox{
+	float: right;
+	width: 460px;
+	height: 456px;
+	background: #FFFFFF;
+	margin-right: 42px;
+	margin-bottom: 42px;
+	background: #FFFFFF;
+	box-shadow: 0 0 10px 5px #EBEBEB;
+	border-radius: 3px;
+	padding: 30px 40px 30px 40px;
+}
+
+.latestOrdersBox .drawBorderBottom td{
+	border-bottom: 1px solid #EBEBEB;
+}
+
+/***********************************/
+
+.latestOrdersBox h2{
+	font-family: HelveticaNeue-Bold;
+	font-size: 24px;
+	color: #000000;
+	margin-bottom: 23px;
+}
+
+/***********************************/
+
+.latestOrdersBox .picture{
+	width: 100px;
+	height: 100px;
+	background-color: #3C3C3C;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/***********************************/
+
+.latestOrdersBox .productData{
+	float: left;
+	margin-bottom: 21px;
+}
+
+.latestOrdersBox .productData li{
+	padding-left: 21px;
+}
+
+.latestOrdersBox .salesData{
+	width: 190px;
+}
+
+.latestOrdersBox .productData .productName{
+	font-family: HelveticaNeue-Bold;
+	font-size: 20px;
+	color: #000000;
+	margin-bottom: 8px;
+}
+
+.latestOrdersBox .productData .purchaseDay{
+	margin-bottom: 8px;	
+}
+
+.latestOrdersBox .productData .purchaseDay i{
+	font-size: 16px;
+	color: #9B9B9B;
+}
+
+.latestOrdersBox .productData .purchaseDay span{
+	font-family: HelveticaNeue;
+	font-size: 16px;
+	color: #9B9B9B;
+}
+
+.latestOrdersBox .productData .customer i{
+	font-size: 16px;
+	color: #9B9B9B;
+}
+
+.latestOrdersBox .productData .customer span{
+	font-family: HelveticaNeue;
+	font-size: 16px;
+	color: #9B9B9B;
+}
+
+
+/***********************************/
+
+.latestOrdersBox .salesTotalNum{
+	width: 90px;
+}
+
+.latestOrdersBox .productTotalCost{
+	float: right;
+	margin-bottom: 21px;
+}
+
+.latestOrdersBox .productTotalCost .totalTitle{
+	font-family: HelveticaNeue;
+	font-size: 14px;
+	color: #000000;
+	text-align: right;
+	margin-bottom: 2px;
+}
+
+.latestOrdersBox .productTotalCost .totalNum{
+	font-family: HelveticaNeue-Bold;
+	font-size: 20px;
+	color: #000000;
+	text-align: right;
+}
+
+/***********************************/
+

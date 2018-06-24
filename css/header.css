@@ -1,0 +1,51 @@
+.header{
+	width: 100%;
+	background: #000000;
+}
+
+.headBox{
+	width: 1024px;
+	margin: 0 auto; 
+}
+
+.mainLogo{
+	float: left;
+	font-family: HelveticaNeue-Bold;
+	font-size: 24px;
+	color: #FFFFFF;
+	padding: 21px 65px 21px 42px;
+}
+
+.mainMenu li a{
+	float: left;
+	text-align: center;
+	padding-top: 26px;
+	padding-bottom: 21px;
+	font-family: HelveticaNeue-Bold;
+	font-size: 16px;
+	color: #9B9B9B;
+	border-bottom: 4px solid #000000;
+}
+
+.mainMenu li a:hover{
+	color: #FFFFFF;
+	border-bottom: 4px solid #FFFFFF;
+}
+
+.mainMenu .current a{
+	font-family: HelveticaNeue-Bold;
+	font-size: 16px;
+	color: #FFFFFF;
+	border-bottom: 4px solid #FFFFFF;
+	cursor: default;
+}
+
+.userTitle{
+	float: right;
+	font-family: HelveticaNeue-Bold;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-top: 26px;
+	padding-bottom: 25px;
+	padding-right: 42px;
+}

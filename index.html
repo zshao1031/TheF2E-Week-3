@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<!--========================-->
+	<!--※※【網頁顯示資訊設定】※※-->	
+	<!--========================-->
+	
+	<!--使用編碼-->
+	<meta charset="UTF-8">
+	
+	<!--頁籤設定-->
+	<title>TheF2E Week3: Admin Order</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<!--把螢幕解析度的寬度變成載具的寬度(RWD用)-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--網站描述與關鍵字設定-->
+	<meta name="description" content="此網站為書豪參加TheF2E的第三週作品">
+	<meta name="keywords" content="TheF2E, Week3, Admin Order">
+
+	<!--網站貼在Facebook上時顯示的資訊-->
+	<meta property="og:title" content="TheF2E Week3: Admin Order">
+	<meta property="og:description" content="此網站為書豪參加TheF2E的第三週作品">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="img/TheF2E.jpg">
+
+	<!--IE相容性設定-->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<!--載入Font Awesome的Icons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!--載入CSS-->
+	<link rel="stylesheet" href="css/CSSReset.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/home.css">
+
+	<!--載入jQuery-->	
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<!--載入Chart-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.js"></script>
+	<!--載入javascript-->
+	<script src="js/home.js"></script>
+</head>
+
+<body>
+
+	<!--主選單-->
+	<div class="header">
+		<div class="headBox">
+			<h1 class="mainLogo">Shoptime</h1>
+			<ul class="mainMenu">
+				<li class="current"><a href="index.html" style="width: 90px;">HOME</a></li>
+				<li><a href="orders.html" style="width: 109px;">ORDERS</a></li>
+				<li><a href="product.html"  style="width: 121px;">PRODUCT</a></li>
+			</ul>
+			<div class="userTitle">ADMIN</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<!--內容-->
+	<div class="wrap">
+		<div class="overview">
+			<h2>OVERVIEW</h2>
+			<div class="dateBox">
+				<span id="firstDay">2018/6/6</span>
+				<i class="fas fa-caret-right"></i>
+				<span id="lastDay">2018/6/13</span>
+				<div id = "selectTimeRange">
+					<span class="currentSelect">Weekly</span>
+					<i class="fas fa-caret-down"></i>
+					<ul class="timeRangeList">
+						<li>Daily</li>
+						<li>Weekly</li>
+						<li>Monthly</li>
+						<li>Yearly</li>
+						<li>Custom</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+
+		<ul class="dataList">
+
+			<li class="totalRevenue">				
+				<i class="fas fa-hand-holding-usd"></i>
+				<h3>TOTAL REVENUE</h3>
+				<p>54,540</p>
+			</li>
+
+			<li class="totalCost">
+				<i class="fas fa-boxes"></i>
+				<h3>TOTAL COST</h3>
+				<p>12,660</p>
+			</li>
+			
+			<li class="netIncome">
+				<i class="fas fa-money-bill"></i>
+				<h3>NET INCOME</h3>
+				<p>41,880</p>
+			</li>
+			
+			<div class="clearfix"></div>
+		</ul>
+		
+		<div class="activity">
+			<h2>Activity</h2>
+			<canvas id="canvas"></canvas>
+		</div>
+
+		<div class="transactionWebsiteBox">
+			<h2>Transaction Website</h2>
+			<table>
+				<tr class="drawBorderBottom">
+					<td><i class="fab fa-facebook websiteMarks"></i></td>
+					<td class="websiteAddress">Facebook.com</td>
+					<td class="salesVolume">45,836</td>
+					<td class="performance goUp"><i class="fas fa-arrow-up "></i></td>
+					<td class="performanceValue goUp">20%</td>
+				</tr>
+				<tr class="drawBorderBottom">
+					<td><i class="fab fa-google websiteMarks"></i></td>
+					<td class="websiteAddress">google.com</td>
+					<td class="salesVolume">23,582</td>
+					<td class="performance goUp"><i class="fas fa-arrow-up"></i></td>
+					<td class="performanceValue goUp">12%</td>
+				</tr>
+				<tr class="drawBorderBottom">
+					<td><i class="fab fa-nintendo-switch websiteMarks"></i></td>
+					<td class="websiteAddress">nintendo.com</td>
+					<td class="salesVolume">2,489</td>
+					<td class="performance goDown"><i class="fas fa-arrow-down"></i></td>
+					<td class="performanceValue goDown">15%</td>
+				</tr>
+				<tr>
+					<td><i class="fab fa-wordpress websiteMarks"></i></td>
+					<td class="websiteAddress">Wordpress.com</td>
+					<td class="salesVolume">1,057</td>
+					<td class="performance goDown"><i class="fas fa-arrow-down"></i></td>
+					<td class="performanceValue goDown">30%</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div class="latestOrdersBox">
+			<h2>Latest Orders</h2>
+			<table>
+				<tr class="drawBorderBottom">
+					<td>
+						<div class="picture" style="background-image: url(./img/img1.jpg)"></div>
+					</td>
+					<td class="salesData">
+						<ul class="productData">
+							<li class="productName">Blush Dress</li>
+							<li class="purchaseDay">
+								<i class="fas fa-clock"></i>
+								<span>2018/6/13  13:42</span>
+							</li>
+							<li class="customer">
+								<i class="fas fa-female"></i>
+								<span>Mary Willis</span>
+							</li>
+						</ul>
+					</td>
+					<td class="salesTotalNum">
+						<ul class="productTotalCost">
+							<li class="totalTitle">Total</li>
+							<li class="totalNum">3,200</li>
+						</ul>
+					</td>
+				</tr>
+				<tr class="drawBorderBottom">
+					<td>
+						<div class="picture" style="background-image: url(./img/img2.jpg)"></div>
+					</td>
+					<td class="salesData">
+						<ul class="productData">
+							<li class="productName">Suspender Trousers</li>
+							<li class="purchaseDay">
+								<i class="fas fa-clock"></i>
+								<span>2018/6/13  10:45</span>
+							</li>
+							<li class="customer">
+								<i class="fas fa-female"></i>
+								<span>Alice Cummings</span>
+							</li>
+						</ul>
+					</td>
+					<td class="salesTotalNum">
+						<ul class="productTotalCost">
+							<li class="totalTitle">Total</li>
+							<li class="totalNum">2,800</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="picture" style="background-image: url(./img/img3.jpg)"></div>
+					</td>
+					<td class="salesData">
+						<ul class="productData">
+							<li class="productName">Women's T-shirt</li>
+							<li class="purchaseDay">
+								<i class="fas fa-clock"></i>
+								<span>2018/6/13  8:26</span>
+							</li>
+							<li class="customer">
+								<i class="fas fa-female"></i>
+								<span>Helen Holland</span>
+							</li>
+						</ul>
+					</td>
+					<td class="salesTotalNum">
+						<ul class="productTotalCost">
+							<li class="totalTitle">Total</li>
+							<li class="totalNum">1,600</li>
+						</ul>
+					</td>
+				</tr>
+			</table>	
+		</div>
+		
+		<div class="clearfix"></div>
+	</div>
+	
+</body>
+
+</html>
