@@ -5,7 +5,8 @@
 ### 頁面展示：<https://zshao1031.github.io/TheF2E-Week-3/>
 ### 未實作功能：純粹是版型，沒有功能
 
-![預覽縮圖](img/thumbnail.jpg)
+### 預覽圖片：
+![預覽圖片](img/thumbnail.jpg)
 
 ***
 ## 【其他說明】
